@@ -1,0 +1,89 @@
+/* CampusConnect custom theme */
+:root {
+  --cc-ink: #17233c;
+  --cc-muted: #65718a;
+  --cc-primary: #5b4bdb;
+  --cc-primary-dark: #4334b5;
+  --cc-accent: #f5b544;
+  --cc-surface: #f5f7fc;
+  --cc-border: #e4e8f2;
+  --cc-radius: 1.15rem;
+}
+
+html { scroll-behavior: smooth; }
+body { color: var(--cc-ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+.site-navbar { background: #17233c; padding: .95rem 0; }
+.site-navbar .navbar-brand { letter-spacing: -.03em; }
+.site-navbar .nav-link { color: rgba(255,255,255,.78); margin-left: .35rem; padding: .55rem .85rem !important; border-radius: 999px; }
+.site-navbar .nav-link:hover, .site-navbar .nav-link.active { color: #fff; background: rgba(255,255,255,.13); }
+.hero-section { padding: 5.25rem 0; color: #fff; background: linear-gradient(120deg, #17233c 0%, #4438a8 60%, #7667e8 100%); }
+.hero-section h1 { max-width: 700px; letter-spacing: -.045em; }
+.hero-section h1 span { color: var(--cc-accent); }
+.hero-section .lead { color: rgba(255,255,255,.8); max-width: 590px; }
+.eyebrow, .section-kicker { color: var(--cc-primary); text-transform: uppercase; font-size: .78rem; font-weight: 800; letter-spacing: .13em; }
+.hero-section .eyebrow { color: #f9d88e; }
+.hero-image { width: 100%; height: 360px; object-fit: cover; border-radius: 2rem; box-shadow: 0 24px 70px rgba(0,0,0,.25); }
+.btn-brand { --bs-btn-color: #fff; --bs-btn-bg: var(--cc-primary); --bs-btn-border-color: var(--cc-primary); --bs-btn-hover-color: #fff; --bs-btn-hover-bg: var(--cc-primary-dark); --bs-btn-hover-border-color: var(--cc-primary-dark); --bs-btn-focus-shadow-rgb: 91,75,219; --bs-btn-active-bg: var(--cc-primary-dark); border-radius: 999px; padding: .75rem 1.35rem; font-weight: 700; }
+.btn-outline-brand { color: var(--cc-primary); border-color: #c9c4fa; border-radius: 999px; font-weight: 650; }
+.btn-outline-brand:hover { background: var(--cc-primary); border-color: var(--cc-primary); color: #fff; }
+.section-space { padding: 5rem 0; }
+.bg-soft { background: var(--cc-surface); }
+.section-heading { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.section-heading h2, .section-intro h2 { font-weight: 800; letter-spacing: -.035em; }
+.section-intro { max-width: 650px; margin: 0 auto; }
+.text-link { color: var(--cc-primary); text-decoration: none; font-weight: 700; white-space: nowrap; }
+.text-link:hover { color: var(--cc-primary-dark); }
+.featured-carousel .carousel-photo { height: 440px; object-fit: cover; filter: brightness(.72); }
+.featured-carousel .carousel-caption { bottom: 3rem; left: 8%; max-width: 550px; }
+.featured-carousel .carousel-caption h3 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; }
+.event-card, .society-card, .team-card { border: 1px solid var(--cc-border); border-radius: var(--cc-radius); overflow: hidden; transition: transform .22s ease, box-shadow .22s ease; }
+.event-card:hover, .society-card:hover, .team-card:hover { transform: translateY(-5px); box-shadow: 0 18px 38px rgba(23,35,60,.12); }
+.event-card .card-img-top, .society-card .card-img-top { height: 190px; object-fit: cover; }
+.event-card .card-body, .society-card .card-body { padding: 1.35rem; }
+.date-badge { background: #fff0ce; color: #80550b; }
+.category-badge, .member-badge { background: #eeecff; color: #4c3ac2; }
+.feature-card { height: 100%; padding: 2rem; border: 1px solid var(--cc-border); border-radius: var(--cc-radius); background: #fff; }
+.feature-icon { display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 1.25rem; border-radius: 18px; color: var(--cc-primary); background: #eeecff; font-size: 1.6rem; }
+.feature-card p { color: var(--cc-muted); margin-bottom: 0; }
+.site-footer { background: #17233c; color: rgba(255,255,255,.7); padding: 1.75rem 0; }
+.footer-brand { color: #fff; font-weight: 800; font-size: 1.15rem; text-decoration: none; }
+.footer-links { display: flex; gap: 1rem; }
+.footer-links a { color: rgba(255,255,255,.75); text-decoration: none; }
+.footer-links a:hover { color: #fff; }
+.page-banner { padding: 4.25rem 0; background: linear-gradient(120deg, #f2f0ff, #f7f9ff); }
+.page-banner h1 { font-weight: 850; letter-spacing: -.045em; font-size: clamp(2.3rem, 5vw, 3.6rem); }
+.page-banner .lead { color: var(--cc-muted); }
+.schedule-table { border-radius: .75rem; overflow: hidden; }
+.detail-banner { width: 100%; height: 400px; object-fit: cover; border-radius: var(--cc-radius); }
+.event-info-card, .form-shell { background: #fff; border: 1px solid var(--cc-border); border-radius: var(--cc-radius); padding: 2rem; box-shadow: 0 10px 32px rgba(23,35,60,.05); }
+.info-list li { display: flex; gap: 1rem; margin-bottom: 1.25rem; }
+.info-list i { color: var(--cc-primary); font-size: 1.3rem; }
+.info-list strong, .info-list span { display: block; }
+.info-list span { color: var(--cc-muted); margin-top: .15rem; }
+.accordion { --bs-accordion-border-color: var(--cc-border); --bs-accordion-btn-focus-box-shadow: 0 0 0 .2rem rgba(91,75,219,.15); --bs-accordion-active-bg: #f1efff; --bs-accordion-active-color: var(--cc-primary-dark); border-radius: .8rem; overflow: hidden; }
+.form-shell { max-width: 920px; margin: 0 auto; padding: clamp(1.25rem, 4vw, 2.5rem); }
+.form-control, .form-select { min-height: 46px; border-color: #dce1ed; border-radius: .7rem; }
+.form-control:focus, .form-select:focus { border-color: #a8a0f1; box-shadow: 0 0 0 .22rem rgba(91,75,219,.13); }
+textarea.form-control { min-height: 130px; }
+.contact-details p { display: flex; gap: 1rem; color: var(--cc-muted); }
+.contact-details p i { color: var(--cc-primary); font-size: 1.25rem; }
+.map-placeholder { width: 100%; height: 210px; object-fit: cover; border-radius: .9rem; }
+.team-card { text-align: center; }
+.team-photo { width: 100%; height: 210px; object-fit: cover; }
+.team-card .card-body { padding: 1.5rem; }
+@media (max-width: 767.98px) {
+  .hero-section { padding: 3.5rem 0; }
+  .hero-image { height: 250px; }
+  .section-space { padding: 3.25rem 0; }
+  .section-heading { align-items: start; flex-direction: column; }
+  .featured-carousel .carousel-photo { height: 330px; }
+  .featured-carousel .carousel-caption { bottom: 2rem; }
+  .detail-banner { height: 260px; }
+  .site-footer .container { text-align: center; }
+}
+@media (max-width: 400px) {
+  .hero-section h1 { font-size: 2.35rem; }
+  .featured-carousel .carousel-photo { height: 300px; }
+  .featured-carousel .carousel-caption p { font-size: .9rem; }
+  .event-info-card { padding: 1.25rem; }
+}
