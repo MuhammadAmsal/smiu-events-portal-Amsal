@@ -8,8 +8,8 @@ A responsive six-page university events website built with Bootstrap 5.3.3, Boot
 
 | Member | Name | Roll number | GitHub username |
 |---|---|---|---|
-| Member 1 | [Full name] | [Roll number] | [@username] |
-| Member 2 | [Full name] | [Roll number] | [@username] |
+| Member 1 | Muhammad Amsal | BSE-24S-096 | muhammadamsal|
+| Member 2 | Amsal | BSE-24S-096  | mamsal |
 
 ## Page responsibilities (2-member split)
 
